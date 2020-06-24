@@ -74,5 +74,43 @@ namespace PatternPrograms
             }
 
         }
+        public void Pyramid3()
+        {
+            Console.WriteLine("Enter Any Integer Number For Pyramid Pattern");
+            int n = Convert.ToInt32(Console.ReadLine());
+            for (i = 1; i <= n; i++)
+            {
+                for (j = n; j >= i; j--)
+                {
+                    Console.Write(" ");
+                }
+                for (k = 1; k <= i; k++)
+                {
+                    Console.Write("*");
+                }
+                for (int l = 2; l <= i; l++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
+        }
+        public void Pyramid4()
+        {
+            Console.WriteLine("Enter Any Integer Number For Pyramid Pattern");
+            int n = Convert.ToInt32(Console.ReadLine());
+            for(i=1;i<=n;i++)
+            {
+                for(j=n;j>=i;j--)
+                {
+                    Console.Write(" ");
+                }
+                for(k=1;k<(i*2);k++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
+        }
     }
 }

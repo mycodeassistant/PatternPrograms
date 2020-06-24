@@ -54,7 +54,7 @@ namespace PatternPrograms
         //create method
         void Diamond1()
         {
-            int i, j, k, number;
+            int i, j,number;
             Console.WriteLine("Enter any number");
             number = int.Parse(Console.ReadLine());
             for (i = 0; i <= number; i++)
@@ -141,7 +141,22 @@ namespace PatternPrograms
             // program.RightTriangle();
             //program.LeftReverse();
             // program.RightReverseTriangle();
-            diamond.Pyramid2();
+            // diamond.Pyramid2();
+            // diamond.Pyramid3();
+            // diamond.Pyramid4();
+
+            //create obj of class ReversePyramid
+            ReversePyramid reversePyramid = new ReversePyramid();
+           // reversePyramid.Reverse();
+
+            //create obj of class Diagonal
+            Diagonal diagonal = new Diagonal();
+            // diagonal.First();
+            // diagonal.First2();
+            //diagonal.HollowPyramid();
+            //diagonal.CrossDiagonal();
+            diagonal.HollowSquare();
+
         }
     }
 }
