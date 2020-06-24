@@ -140,8 +140,8 @@ namespace PatternPrograms
             // program.LeftTriangle();
             // program.RightTriangle();
             //program.LeftReverse();
-            program.RightReverseTriangle();
-
+            // program.RightReverseTriangle();
+            diamond.Pyramid2();
         }
     }
 }
