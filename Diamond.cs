@@ -6,9 +6,73 @@ namespace PatternPrograms
 {
     class Diamond
     {
-        public string  diamond
+        int i, j, k;
+        public void RightReverseDouble()
         {
-            get;
+            Console.WriteLine("Enater Any Integer Number for RightReverseDouble Triangle");
+            int n = Convert.ToInt32(Console.ReadLine());
+            for (i = 1; i <= n; i++)
+            {
+                for (j = n; j >= i; j--)
+                {
+                    Console.Write(" ");
+                }
+                for (k = 1; k <= i; k++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
+            for (i = 1; i <= n; i++)
+            {
+                for (j = 1; j <= i; j++)
+                {
+                    Console.Write(" ");
+                }
+                for (k = n; k >= i; k--)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
+        }
+        public void Pyramid()
+        {
+            Console.WriteLine("Enter Any Number for MiddleTriangle");
+            int n = Convert.ToInt32(Console.ReadLine());
+            for (i = 1; i <= n; i++)
+            {
+                for (j = n; j >= i; j--)
+                {
+                    Console.Write(" ");
+                }
+                for (k = 1; k <= i; k++)
+                {
+                    Console.Write(" *");
+                }
+                Console.WriteLine();
+            }
+        }
+        public void Pyramid2()
+        {
+            Console.WriteLine("Enter Any Integer Number For Pyramid Pattern");
+            int n = Convert.ToInt32(Console.ReadLine());
+            for (i = 1; i <= n; i++)
+            {
+                for (j = n; j >= 1; j--)
+                {
+                    if (j > i)
+                    {
+                        Console.Write(" ");
+                    }
+                    else
+                    {
+                        Console.Write(" *");
+                    }
+                }
+                Console.WriteLine();
+            }
+
         }
     }
 }
